@@ -1,0 +1,119 @@
+.thumbnail{
+    width: 100%;
+    cursor: pointer;
+}
+
+.video-title{
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.video-info{
+    display: inline-block;
+    width: 100%;
+}
+.profile-picture{
+    width: 80%;
+    border-radius: 50%;
+    
+}
+.thumbnail-row{
+    margin-bottom: 10px;
+    position: relative;
+}
+.video-time{
+    position: absolute;
+    bottom: 12px;
+    right: 4px;
+    color: white;
+    background-color: #000000e6;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 2px;
+    font-weight: 500;
+}
+.video-author, .video-stats{
+    font-size: 12px;
+    color:#606060
+}
+.video-author{
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 36px;
+    
+}
+@media (min-width:1300px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .video-title{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .vide-author{
+        font-size: 12px;
+    }
+}
+@media(min-width:900px) and (max-width:1299px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(max-width:899px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.channel-picture{
+    position: relative;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.channel-info{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding:15px 20px;
+    opacity: 0;
+    background-color: white;
+    z-index: 300;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+}
+.channel-info img{
+    border-radius:100px;
+    width: 60px;
+    margin-right: 15px;
+}
+.channel-info h2{
+    margin-top: -5px;
+    font-size: 20px;
+}
+.channel-info p{
+    margin-top: -10px;
+    font-size: 16px;
+}
+.channel-picture:hover .channel-info{
+    opacity: 1;
+}
